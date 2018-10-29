@@ -19,6 +19,11 @@
        window.location.href="/nextPage" ;
     }
 
+    function submitForm(){
+
+
+    }
+
     var expanded = false;
 
     // checkbox in select item
@@ -47,11 +52,11 @@
   </div>
 
   <div class="center back-color">
-    <form  style="color:#fff;"action = "/nextPage" id="secPage" method ="GET">
-      <lable> 
+    <form  style="color:#fff;" action="/nextPage" id="secPage" method ="GET">
+      <label> 
         <h3>Are your end user complaining about application slowness?</h3>
-      </lable>
-      <select style="height: 38px;  width: 122px;">
+      </label>
+      <select required style="height: 38px;  width: 122px;">
         <option>Select</option>
         <option value="Frequently">Frequently</option>
         <option value="Sometimes">Sometimes</option>
@@ -59,10 +64,10 @@
       </select>
       <br>
 
-      <lable>
+      <label>
         <h3>Do you face application downtime in buisness hour?</h3> 
-      </lable> 
-      <select style="height: 38px;  width: 122px;">
+      </label> 
+      <select required style="height: 38px;  width: 122px;">
         <option>Select</option>
         <option value="Frequently">Frequently</option>
         <option value="Sometimes">Sometimes</option>
@@ -70,10 +75,10 @@
       </select>
       <br>
             
-      <lable>
+      <label>
         <h3>Is your IT infrastructure used optimally? </h3>
-      </lable>
-      <select style="height: 38px;  width: 122px;">
+      </label>
+      <select required style="height: 38px;  width: 122px;">
         <option>Select</option>
         <option value="Partially">Partially</option>
         <option value="Yes">Yes</option>
@@ -81,23 +86,23 @@
       </select>
       <br>
             
-      <lable>
+      <label>
         <h3>Do you find difficulty in ROI calculation for future investment due to buisness growth?</h3> 
-      </lable>
-      <select style="height: 38px;  width: 122px;">
+      </label>
+      <select required style="height: 38px;  width: 122px;">
         <option>Select</option>
         <option value="Yes">Yes</option>
         <option value="No">No</option>
       </select>
       <br>
       
-      <lable>
+      <label>
         <h3>Buisness  impacts as per you due to performance issues.</h3> 
-      </lable>
+      </label>
       <br>
       <span class="multiselect">
         <div class="selectBox" onclick="showCheckboxes()">
-          <select>
+          <select required>
             <option>Select an option</option>
           </select>
           <div class="overSelect">  
@@ -121,13 +126,13 @@
         </div>
       </span>
 
-      <lable><h3>Average yearly revenue loss as per you due to performance issues.</h3></lable><input type = "text"  id ="name" required><p id="demo" style="color:Red;"></p>
+      <label><h3>Average yearly revenue loss as per you due to performance issues.</h3></label><input type = "text"  id ="name" required><p id="demo" style="color:Red;"></p>
       <br>
       <br>
       <br>
       <br>
       <center>  
-        <button class="button button2" onclick="movetoNext()" id="myButton">Next</button>
+        <input class="button button2" type='submit' id="myButton">Next</button>
       </center>  
     </form>
   </div>
